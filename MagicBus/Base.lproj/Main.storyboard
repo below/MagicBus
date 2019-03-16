@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="438" y="-493"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Ticket View Controller-->
         <scene sceneID="J5Z-ud-UP0">
             <objects>
-                <viewController id="AL8-Pb-vuh" sceneMemberID="viewController">
+                <viewController id="AL8-Pb-vuh" customClass="SingleTicketViewController" customModule="MagicBus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QVE-vX-Vae">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,10 +223,16 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AL8-Pb-vuh" id="5t6-Ip-grZ"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-Qo-lpu">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4C-Qo-lpu">
                                 <rect key="frame" x="163" y="167" width="49" height="30"/>
                                 <state key="normal" title="Kaufen"/>
+                                <connections>
+                                    <action selector="buySingleTicket" destination="AL8-Pb-vuh" eventType="touchUpInside" id="f2o-EJ-0Zn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,6 +247,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h9x-7g-gOg"/>
                     </view>
+                    <connections>
+                        <outlet property="buyButton" destination="w4C-Qo-lpu" id="xbO-7Y-mgk"/>
+                        <outlet property="destinationField" destination="wsV-4E-8fN" id="JoQ-rF-Rgv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47s-LM-m49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

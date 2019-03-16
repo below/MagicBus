@@ -8,15 +8,47 @@
 
 import UIKit
 
-public class Ticket {
-    public enum Kind {
+public class Ticket : Codable {
+    public enum Kind : Codable {
         case single(destination: String)
         case day
+        
+        private enum CodingKeys: String, CodingKey {
+            case destination
+        }
+        
+        public init(from decoder: Decoder) throws {
+            let values = try decoder.container(keyedBy: CodingKeys.self)
+            if let value = try? values.decode(String.self, forKey: .destination) {
+                self = .single(destination: value)
+                return
+            }
+            else {
+                self = .day
+                return
+            }
+        }
+        
+        public func encode(to encoder: Encoder) throws {
+            var container = encoder.container(keyedBy: CodingKeys.self)
+            switch self {
+            case .day:
+                break
+            case .single(let destination):
+                try container.encode(destination, forKey: .destination)
+            }
+        }
+        
     }
     public var kind : Kind
-    public var purchaseDate : Date = Date()
-
-    public init(kind: Kind) {
+    public var purchaseDate : Date
+    
+    public init(kind: Kind, purchaseDate : Date) {
         self.kind = kind
+        self.purchaseDate = purchaseDate
+    }
+    
+    public convenience init(kind: Kind) {
+        self.init(kind: kind, purchaseDate: Date())
     }
 }

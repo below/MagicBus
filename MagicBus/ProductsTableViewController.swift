@@ -9,15 +9,21 @@
 import UIKit
 import BusConductor
 
+extension UIViewController  {
+    func showPurchaseSuccessfulAlert() {
+        let alert = UIAlertController(title: NSLocalizedString("Erfolgreich", comment: ""), message: NSLocalizedString("Der Kauf war erfolgreich", comment: ""), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
 class ProductsTableViewController: UITableViewController, TicketController {
     
     var conductor: Conductor!
     
     @IBAction func buyDayTicket(_ sender: UIButton) {
         conductor.purchaseTicket(ticket: Ticket(kind: .day))
-        let alert = UIAlertController(title: NSLocalizedString("Erfolgreich", comment: ""), message: NSLocalizedString("Der Kauf war erfolgreich", comment: ""), preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        self.showPurchaseSuccessfulAlert()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

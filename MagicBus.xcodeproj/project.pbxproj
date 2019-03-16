@@ -23,6 +23,7 @@
 		CBF18B05223D9AEC008D6B25 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */; };
 		CBF18B07223D9E1D008D6B25 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */; };
 		CBF18B09223DA48B008D6B25 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */; };
+		CBF18B0B223DAC8C008D6B25 /* SingleTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B0A223DAC8C008D6B25 /* SingleTicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		CBF18B0A223DAC8C008D6B25 /* SingleTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */,
 				CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */,
 				CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */,
+				CBF18B0A223DAC8C008D6B25 /* SingleTicketViewController.swift */,
 				CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */,
 				CBF18AB1223D2A69008D6B25 /* Main.storyboard */,
 				CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */,
@@ -430,6 +433,7 @@
 				CBF18B05223D9AEC008D6B25 /* MainTableViewController.swift in Sources */,
 				CBF18B07223D9E1D008D6B25 /* ProductsTableViewController.swift in Sources */,
 				CBF18AAE223D2A69008D6B25 /* AppDelegate.swift in Sources */,
+				CBF18B0B223DAC8C008D6B25 /* SingleTicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
