@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CBF18AAE223D2A69008D6B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */; };
-		CBF18AB0223D2A69008D6B25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AAF223D2A69008D6B25 /* ViewController.swift */; };
 		CBF18AB3223D2A69008D6B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF18AB1223D2A69008D6B25 /* Main.storyboard */; };
 		CBF18AB5223D2A6B008D6B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */; };
 		CBF18AB8223D2A6B008D6B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF18AB6223D2A6B008D6B25 /* LaunchScreen.storyboard */; };
 		CBF18AC3223D2A6B008D6B25 /* MagicBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AC2223D2A6B008D6B25 /* MagicBusTests.swift */; };
 		CBF18ACE223D2A6B008D6B25 /* MagicBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18ACD223D2A6B008D6B25 /* MagicBusUITests.swift */; };
+		CBF18AE9223D6AA1008D6B25 /* BusConductor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */; };
+		CBF18AF0223D6AA1008D6B25 /* BusConductorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AEF223D6AA1008D6B25 /* BusConductorTests.swift */; };
+		CBF18AF2223D6AA1008D6B25 /* BusConductor.h in Headers */ = {isa = PBXBuildFile; fileRef = CBF18AE2223D6AA1008D6B25 /* BusConductor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBF18AF5223D6AA1008D6B25 /* BusConductor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */; };
+		CBF18AF6223D6AA1008D6B25 /* BusConductor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBF18AFF223D6AD2008D6B25 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AFE223D6AD2008D6B25 /* Ticket.swift */; };
+		CBF18B01223D6BC9008D6B25 /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B00223D6BC9008D6B25 /* Conductor.swift */; };
+		CBF18B05223D9AEC008D6B25 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */; };
+		CBF18B07223D9E1D008D6B25 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */; };
+		CBF18B09223DA48B008D6B25 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +40,46 @@
 			remoteGlobalIDString = CBF18AA9223D2A69008D6B25;
 			remoteInfo = MagicBus;
 		};
+		CBF18AEA223D6AA1008D6B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF18AA2223D2A69008D6B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF18ADF223D6AA1008D6B25;
+			remoteInfo = BusConductor;
+		};
+		CBF18AEC223D6AA1008D6B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF18AA2223D2A69008D6B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF18AA9223D2A69008D6B25;
+			remoteInfo = MagicBus;
+		};
+		CBF18AF3223D6AA1008D6B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF18AA2223D2A69008D6B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF18ADF223D6AA1008D6B25;
+			remoteInfo = BusConductor;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBF18AFC223D6AA1008D6B25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBF18AF6223D6AA1008D6B25 /* BusConductor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CBF18AAA223D2A69008D6B25 /* MagicBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBF18AAF223D2A69008D6B25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBF18AB2223D2A69008D6B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF18AB7223D2A6B008D6B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +90,17 @@
 		CBF18AC9223D2A6B008D6B25 /* MagicBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF18ACD223D2A6B008D6B25 /* MagicBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBusUITests.swift; sourceTree = "<group>"; };
 		CBF18ACF223D2A6B008D6B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusConductor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF18AE2223D6AA1008D6B25 /* BusConductor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusConductor.h; sourceTree = "<group>"; };
+		CBF18AE3223D6AA1008D6B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF18AE8223D6AA1008D6B25 /* BusConductorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusConductorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF18AEF223D6AA1008D6B25 /* BusConductorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusConductorTests.swift; sourceTree = "<group>"; };
+		CBF18AF1223D6AA1008D6B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF18AFE223D6AD2008D6B25 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		CBF18B00223D6BC9008D6B25 /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
+		CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF18AF5223D6AA1008D6B25 /* BusConductor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +126,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF18ADD223D6AA1008D6B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF18AE5223D6AA1008D6B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF18AE9223D6AA1008D6B25 /* BusConductor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +150,8 @@
 				CBF18AAC223D2A69008D6B25 /* MagicBus */,
 				CBF18AC1223D2A6B008D6B25 /* MagicBusTests */,
 				CBF18ACC223D2A6B008D6B25 /* MagicBusUITests */,
+				CBF18AE1223D6AA1008D6B25 /* BusConductor */,
+				CBF18AEE223D6AA1008D6B25 /* BusConductorTests */,
 				CBF18AAB223D2A69008D6B25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +162,8 @@
 				CBF18AAA223D2A69008D6B25 /* MagicBus.app */,
 				CBF18ABE223D2A6B008D6B25 /* MagicBusTests.xctest */,
 				CBF18AC9223D2A6B008D6B25 /* MagicBusUITests.xctest */,
+				CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */,
+				CBF18AE8223D6AA1008D6B25 /* BusConductorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */,
-				CBF18AAF223D2A69008D6B25 /* ViewController.swift */,
+				CBF18B04223D9AEC008D6B25 /* MainTableViewController.swift */,
+				CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */,
+				CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */,
 				CBF18AB1223D2A69008D6B25 /* Main.storyboard */,
 				CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */,
 				CBF18AB6223D2A6B008D6B25 /* LaunchScreen.storyboard */,
@@ -125,7 +201,38 @@
 			path = MagicBusUITests;
 			sourceTree = "<group>";
 		};
+		CBF18AE1223D6AA1008D6B25 /* BusConductor */ = {
+			isa = PBXGroup;
+			children = (
+				CBF18AE2223D6AA1008D6B25 /* BusConductor.h */,
+				CBF18AE3223D6AA1008D6B25 /* Info.plist */,
+				CBF18AFE223D6AD2008D6B25 /* Ticket.swift */,
+				CBF18B00223D6BC9008D6B25 /* Conductor.swift */,
+			);
+			path = BusConductor;
+			sourceTree = "<group>";
+		};
+		CBF18AEE223D6AA1008D6B25 /* BusConductorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF18AEF223D6AA1008D6B25 /* BusConductorTests.swift */,
+				CBF18AF1223D6AA1008D6B25 /* Info.plist */,
+			);
+			path = BusConductorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CBF18ADB223D6AA1008D6B25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF18AF2223D6AA1008D6B25 /* BusConductor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CBF18AA9223D2A69008D6B25 /* MagicBus */ = {
@@ -135,10 +242,12 @@
 				CBF18AA6223D2A69008D6B25 /* Sources */,
 				CBF18AA7223D2A69008D6B25 /* Frameworks */,
 				CBF18AA8223D2A69008D6B25 /* Resources */,
+				CBF18AFC223D6AA1008D6B25 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBF18AF4223D6AA1008D6B25 /* PBXTargetDependency */,
 			);
 			name = MagicBus;
 			productName = MagicBus;
@@ -181,6 +290,43 @@
 			productReference = CBF18AC9223D2A6B008D6B25 /* MagicBusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CBF18ADF223D6AA1008D6B25 /* BusConductor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF18AFB223D6AA1008D6B25 /* Build configuration list for PBXNativeTarget "BusConductor" */;
+			buildPhases = (
+				CBF18ADB223D6AA1008D6B25 /* Headers */,
+				CBF18ADC223D6AA1008D6B25 /* Sources */,
+				CBF18ADD223D6AA1008D6B25 /* Frameworks */,
+				CBF18ADE223D6AA1008D6B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusConductor;
+			productName = BusConductor;
+			productReference = CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBF18AE7223D6AA1008D6B25 /* BusConductorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF18AFD223D6AA1008D6B25 /* Build configuration list for PBXNativeTarget "BusConductorTests" */;
+			buildPhases = (
+				CBF18AE4223D6AA1008D6B25 /* Sources */,
+				CBF18AE5223D6AA1008D6B25 /* Frameworks */,
+				CBF18AE6223D6AA1008D6B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF18AEB223D6AA1008D6B25 /* PBXTargetDependency */,
+				CBF18AED223D6AA1008D6B25 /* PBXTargetDependency */,
+			);
+			name = BusConductorTests;
+			productName = BusConductorTests;
+			productReference = CBF18AE8223D6AA1008D6B25 /* BusConductorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +348,14 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = CBF18AA9223D2A69008D6B25;
 					};
+					CBF18ADF223D6AA1008D6B25 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CBF18AE7223D6AA1008D6B25 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CBF18AA9223D2A69008D6B25;
+					};
 				};
 			};
 			buildConfigurationList = CBF18AA5223D2A69008D6B25 /* Build configuration list for PBXProject "MagicBus" */;
@@ -220,6 +374,8 @@
 				CBF18AA9223D2A69008D6B25 /* MagicBus */,
 				CBF18ABD223D2A6B008D6B25 /* MagicBusTests */,
 				CBF18AC8223D2A6B008D6B25 /* MagicBusUITests */,
+				CBF18ADF223D6AA1008D6B25 /* BusConductor */,
+				CBF18AE7223D6AA1008D6B25 /* BusConductorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +405,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF18ADE223D6AA1008D6B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF18AE6223D6AA1008D6B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF18AB0223D2A69008D6B25 /* ViewController.swift in Sources */,
+				CBF18B09223DA48B008D6B25 /* HistoryTableViewController.swift in Sources */,
+				CBF18B05223D9AEC008D6B25 /* MainTableViewController.swift in Sources */,
+				CBF18B07223D9E1D008D6B25 /* ProductsTableViewController.swift in Sources */,
 				CBF18AAE223D2A69008D6B25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +449,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF18ADC223D6AA1008D6B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF18AFF223D6AD2008D6B25 /* Ticket.swift in Sources */,
+				CBF18B01223D6BC9008D6B25 /* Conductor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF18AE4223D6AA1008D6B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF18AF0223D6AA1008D6B25 /* BusConductorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +478,21 @@
 			isa = PBXTargetDependency;
 			target = CBF18AA9223D2A69008D6B25 /* MagicBus */;
 			targetProxy = CBF18ACA223D2A6B008D6B25 /* PBXContainerItemProxy */;
+		};
+		CBF18AEB223D6AA1008D6B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF18ADF223D6AA1008D6B25 /* BusConductor */;
+			targetProxy = CBF18AEA223D6AA1008D6B25 /* PBXContainerItemProxy */;
+		};
+		CBF18AED223D6AA1008D6B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF18AA9223D2A69008D6B25 /* MagicBus */;
+			targetProxy = CBF18AEC223D6AA1008D6B25 /* PBXContainerItemProxy */;
+		};
+		CBF18AF4223D6AA1008D6B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF18ADF223D6AA1008D6B25 /* BusConductor */;
+			targetProxy = CBF18AF3223D6AA1008D6B25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +635,7 @@
 		CBF18AD3223D2A6B008D6B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
@@ -449,6 +654,7 @@
 		CBF18AD4223D2A6B008D6B25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
@@ -546,6 +752,105 @@
 			};
 			name = Release;
 		};
+		CBF18AF7223D6AA1008D6B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BusConductor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.BusConductor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CBF18AF8223D6AA1008D6B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BusConductor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.BusConductor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBF18AF9223D6AA1008D6B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = BusConductorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.BusConductorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicBus.app/MagicBus";
+			};
+			name = Debug;
+		};
+		CBF18AFA223D6AA1008D6B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = BusConductorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.BusConductorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicBus.app/MagicBus";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +886,24 @@
 			buildConfigurations = (
 				CBF18AD9223D2A6B008D6B25 /* Debug */,
 				CBF18ADA223D2A6B008D6B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF18AFB223D6AA1008D6B25 /* Build configuration list for PBXNativeTarget "BusConductor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF18AF7223D6AA1008D6B25 /* Debug */,
+				CBF18AF8223D6AA1008D6B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF18AFD223D6AA1008D6B25 /* Build configuration list for PBXNativeTarget "BusConductorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF18AF9223D6AA1008D6B25 /* Debug */,
+				CBF18AFA223D6AA1008D6B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
