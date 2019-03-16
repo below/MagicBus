@@ -1,0 +1,2 @@
+# MagicBus
+A sample application
