@@ -23,8 +23,9 @@ class BusConductorTests: XCTestCase {
     }
 
     func testHistory() {
+        let expectedCount = (conductor.history?.count ?? 0) + 1
         conductor.purchaseTicket (ticket: ticket)
-        XCTAssertEqual(conductor.history?.count, 1)
+        XCTAssertEqual(conductor.history?.count, expectedCount)
     }
 
     func testEncode() {
@@ -39,10 +40,18 @@ class BusConductorTests: XCTestCase {
     }
 
     func testStorage () {
-        conductor.purchaseTicket (ticket: ticket)
-        XCTAssertEqual(conductor.history?.count, 1)
+        let originalDestination = "Köln"
+        let expectedCount = (conductor.history?.count ?? 0) + 1
+        conductor.purchaseTicket (ticket: Ticket.init(kind: .single(destination: originalDestination)))
+        XCTAssertEqual(conductor.history?.count, expectedCount)
         let newConductor = Conductor()
-        XCTAssertEqual(newConductor.history?.count, 1)
+        XCTAssertEqual(newConductor.history?.count, expectedCount)
+        if let newTicket = newConductor.history?.last {
+            if case .single(let destination) = newTicket.kind {
+                XCTAssertEqual(destination, originalDestination)
+                return
+            }
+        }
+        XCTFail()
     }
-    
 }
