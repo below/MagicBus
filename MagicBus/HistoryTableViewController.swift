@@ -19,6 +19,18 @@ class HistoryTableViewController: UITableViewController, TicketController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let userActivity = NSUserActivity(activityType: "com.vonbelow.magicbus.history")
+        userActivity.isEligibleForSearch = true
+        userActivity.title = "Bisherige Käufe"
+        
+        userActivity.isEligibleForPrediction = true
+        
+        self.userActivity = userActivity
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

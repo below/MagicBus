@@ -74,7 +74,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Wei-MT-Oq0" kind="show" id="Kbr-JH-2B8"/>
+                                            <segue destination="Wei-MT-Oq0" kind="show" identifier="History" id="Kbr-JH-2B8"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -202,7 +202,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFP-hr-vbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="-493"/>
+            <point key="canvasLocation" x="476" y="-494"/>
         </scene>
         <!--Single Ticket View Controller-->
         <scene sceneID="J5Z-ud-UP0">
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47s-LM-m49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="-493.40329835082463"/>
+            <point key="canvasLocation" x="1313" y="-494"/>
         </scene>
     </scenes>
 </document>

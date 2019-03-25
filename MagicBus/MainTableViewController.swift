@@ -28,7 +28,19 @@ class MainTableViewController: UITableViewController {
     }
 
     // MARK: - Navigation
+    override func restoreUserActivityState(_ activity: NSUserActivity) {
+        super.restoreUserActivityState(activity)
+        
+        if activity.activityType == "com.vonbelow.magicbus.history" {
+            self.performActivitySegue(withIdentifier: "History")
+        }
+    }
 
+    func performActivitySegue(withIdentifier identifier: String) {
+        navigationController?.popToRootViewController(animated: false)
+        self.performSegue(withIdentifier: identifier, sender: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if var ticketController = segue.destination as? TicketController {
             ticketController.conductor = conductor
