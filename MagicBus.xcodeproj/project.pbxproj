@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBEA49F12249100A00B0BA0D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		CBEA49F22249100A00B0BA0D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; };
 		CBF18AAE223D2A69008D6B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */; };
 		CBF18AB3223D2A69008D6B25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF18AB1223D2A69008D6B25 /* Main.storyboard */; };
 		CBF18AB5223D2A6B008D6B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */; };
@@ -80,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		CBEA49EF2249063500B0BA0D /* MagicBus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicBus.entitlements; sourceTree = "<group>"; };
+		CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		CBF18AAA223D2A69008D6B25 /* MagicBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBF18AB2223D2A69008D6B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +183,7 @@
 				CBF18B06223D9E1D008D6B25 /* ProductsTableViewController.swift */,
 				CBF18B0A223DAC8C008D6B25 /* SingleTicketViewController.swift */,
 				CBF18B08223DA48B008D6B25 /* HistoryTableViewController.swift */,
+				CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */,
 				CBF18AB1223D2A69008D6B25 /* Main.storyboard */,
 				CBF18AB4223D2A6B008D6B25 /* Assets.xcassets */,
 				CBF18AB6223D2A6B008D6B25 /* LaunchScreen.storyboard */,
@@ -436,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEA49F12249100A00B0BA0D /* Intents.intentdefinition in Sources */,
 				CBF18B09223DA48B008D6B25 /* HistoryTableViewController.swift in Sources */,
 				CBF18B05223D9AEC008D6B25 /* MainTableViewController.swift in Sources */,
 				CBF18B07223D9E1D008D6B25 /* ProductsTableViewController.swift in Sources */,
@@ -464,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEA49F22249100A00B0BA0D /* Intents.intentdefinition in Sources */,
 				CBF18AFF223D6AD2008D6B25 /* Ticket.swift in Sources */,
 				CBF18B01223D6BC9008D6B25 /* Conductor.swift in Sources */,
 			);

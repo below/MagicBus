@@ -51,4 +51,23 @@ public class Ticket : Codable {
     public convenience init(kind: Kind) {
         self.init(kind: kind, purchaseDate: Date())
     }
+    
+    public convenience init(intent: BuyTicketIntent) {
+        var kind : Kind!
+        if let destination = intent.destination {
+            kind = .single(destination: destination)
+        } else {
+            kind = .day
+        }
+        self.init(kind: kind)
+    }
+    
+    var intent : BuyTicketIntent { get {
+        let intent = BuyTicketIntent()
+        if case .single (let destination) = self.kind {
+            intent.destination = destination
+        }
+        return intent
+        }
+    }
 }

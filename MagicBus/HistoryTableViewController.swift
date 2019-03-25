@@ -25,7 +25,6 @@ class HistoryTableViewController: UITableViewController, TicketController {
         let userActivity = NSUserActivity(activityType: "com.vonbelow.magicbus.history")
         userActivity.isEligibleForSearch = true
         userActivity.title = "Bisherige Käufe"
-        
         userActivity.isEligibleForPrediction = true
         
         self.userActivity = userActivity

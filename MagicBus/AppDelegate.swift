@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         
-        if userActivity.activityType == "com.vonbelow.magicbus.history" {
+        if userActivity.activityType == "com.vonbelow.magicbus.history" || userActivity.activityType == "BuyTicketIntent" {
             guard let window = window,
                 let rootViewController = window.rootViewController as? UINavigationController else {
                     return false

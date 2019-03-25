@@ -33,6 +33,8 @@ class MainTableViewController: UITableViewController {
         
         if activity.activityType == "com.vonbelow.magicbus.history" {
             self.performActivitySegue(withIdentifier: "History")
+        } else if activity.activityType == "BuyTicketIntent" {
+            self.performActivitySegue(withIdentifier: "BuyTicket")
         }
     }
 

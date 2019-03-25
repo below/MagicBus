@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Intents
 
 public class Conductor {
     
@@ -53,6 +54,8 @@ public class Conductor {
             let data = try encoder.encode(historyStore)
             defaults.set(data, forKey: historyStoreKey)
 
+            let intent = ticket.intent
+            INInteraction(intent: intent, response: nil).donate(completion: nil)
         }
         catch {
             print ("Did not work!")

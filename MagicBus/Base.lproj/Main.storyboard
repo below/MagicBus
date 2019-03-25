@@ -54,7 +54,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="lpt-y3-Re9" kind="show" id="nPK-RV-2ZP"/>
+                                            <segue destination="lpt-y3-Re9" kind="show" identifier="BuyTicket" id="nPK-RV-2ZP"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fXd-du-VAq" style="IBUITableViewCellStyleDefault" id="Yb4-Er-Isr">
