@@ -10,6 +10,12 @@
 		CB64960522491659009FA165 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64960422491659009FA165 /* IntentHandler.swift */; };
 		CB64960922491659009FA165 /* MagicBusIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB64960222491659009FA165 /* MagicBusIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB64960E22491668009FA165 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
+		CB649619224925A0009FA165 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB649618224925A0009FA165 /* IntentsUI.framework */; };
+		CB64961C224925A0009FA165 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64961B224925A0009FA165 /* IntentViewController.swift */; };
+		CB64961F224925A0009FA165 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB64961D224925A0009FA165 /* MainInterface.storyboard */; };
+		CB649623224925A0009FA165 /* MagicBusIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB649616224925A0009FA165 /* MagicBusIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB649627224925A9009FA165 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; };
+		CB64962922492642009FA165 /* transport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB64962822492642009FA165 /* transport.jpg */; };
 		CBEA49F12249100A00B0BA0D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; settings = {ATTRIBUTES = (no_codegen, ); }; };
 		CBEA49F22249100A00B0BA0D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */; };
 		CBF18AAE223D2A69008D6B25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF18AAD223D2A69008D6B25 /* AppDelegate.swift */; };
@@ -45,6 +51,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CBF18ADF223D6AA1008D6B25;
 			remoteInfo = BusConductor;
+		};
+		CB649621224925A0009FA165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF18AA2223D2A69008D6B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB649615224925A0009FA165;
+			remoteInfo = MagicBusIntentsUI;
 		};
 		CBF18ABF223D2A6B008D6B25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -91,6 +104,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				CB64960922491659009FA165 /* MagicBusIntents.appex in Embed App Extensions */,
+				CB649623224925A0009FA165 /* MagicBusIntentsUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +126,13 @@
 		CB64960222491659009FA165 /* MagicBusIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicBusIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB64960422491659009FA165 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		CB64960622491659009FA165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB64961122491FA2009FA165 /* MagicBusIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicBusIntents.entitlements; sourceTree = "<group>"; };
+		CB649616224925A0009FA165 /* MagicBusIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicBusIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB649618224925A0009FA165 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		CB64961B224925A0009FA165 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		CB64961E224925A0009FA165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CB649620224925A0009FA165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB64962822492642009FA165 /* transport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transport.jpg; sourceTree = "<group>"; };
 		CBEA49EF2249063500B0BA0D /* MagicBus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicBus.entitlements; sourceTree = "<group>"; };
 		CBEA49F02249100A00B0BA0D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		CBF18AAA223D2A69008D6B25 /* MagicBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +166,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB649613224925A0009FA165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB649619224925A0009FA165 /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +220,30 @@
 		CB64960322491659009FA165 /* MagicBusIntents */ = {
 			isa = PBXGroup;
 			children = (
+				CB64961122491FA2009FA165 /* MagicBusIntents.entitlements */,
 				CB64960422491659009FA165 /* IntentHandler.swift */,
 				CB64960622491659009FA165 /* Info.plist */,
 			);
 			path = MagicBusIntents;
+			sourceTree = "<group>";
+		};
+		CB649617224925A0009FA165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB649618224925A0009FA165 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB64961A224925A0009FA165 /* MagicBusIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				CB64962822492642009FA165 /* transport.jpg */,
+				CB64961B224925A0009FA165 /* IntentViewController.swift */,
+				CB64961D224925A0009FA165 /* MainInterface.storyboard */,
+				CB649620224925A0009FA165 /* Info.plist */,
+			);
+			path = MagicBusIntentsUI;
 			sourceTree = "<group>";
 		};
 		CBF18AA1223D2A69008D6B25 = {
@@ -206,6 +255,8 @@
 				CBF18AE1223D6AA1008D6B25 /* BusConductor */,
 				CBF18AEE223D6AA1008D6B25 /* BusConductorTests */,
 				CB64960322491659009FA165 /* MagicBusIntents */,
+				CB64961A224925A0009FA165 /* MagicBusIntentsUI */,
+				CB649617224925A0009FA165 /* Frameworks */,
 				CBF18AAB223D2A69008D6B25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -219,6 +270,7 @@
 				CBF18AE0223D6AA1008D6B25 /* BusConductor.framework */,
 				CBF18AE8223D6AA1008D6B25 /* BusConductorTests.xctest */,
 				CB64960222491659009FA165 /* MagicBusIntents.appex */,
+				CB649616224925A0009FA165 /* MagicBusIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +363,23 @@
 			productReference = CB64960222491659009FA165 /* MagicBusIntents.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		CB649615224925A0009FA165 /* MagicBusIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB649624224925A0009FA165 /* Build configuration list for PBXNativeTarget "MagicBusIntentsUI" */;
+			buildPhases = (
+				CB649612224925A0009FA165 /* Sources */,
+				CB649613224925A0009FA165 /* Frameworks */,
+				CB649614224925A0009FA165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicBusIntentsUI;
+			productName = MagicBusIntentsUI;
+			productReference = CB649616224925A0009FA165 /* MagicBusIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CBF18AA9223D2A69008D6B25 /* MagicBus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBF18AD2223D2A6B008D6B25 /* Build configuration list for PBXNativeTarget "MagicBus" */;
@@ -326,6 +395,7 @@
 			dependencies = (
 				CBF18AF4223D6AA1008D6B25 /* PBXTargetDependency */,
 				CB64960822491659009FA165 /* PBXTargetDependency */,
+				CB649622224925A0009FA165 /* PBXTargetDependency */,
 			);
 			name = MagicBus;
 			productName = MagicBus;
@@ -417,6 +487,14 @@
 				TargetAttributes = {
 					CB64960122491659009FA165 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CB649615224925A0009FA165 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 					CBF18AA9223D2A69008D6B25 = {
 						CreatedOnToolsVersion = 10.1;
@@ -463,6 +541,7 @@
 				CBF18ADF223D6AA1008D6B25 /* BusConductor */,
 				CBF18AE7223D6AA1008D6B25 /* BusConductorTests */,
 				CB64960122491659009FA165 /* MagicBusIntents */,
+				CB649615224925A0009FA165 /* MagicBusIntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +551,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB649614224925A0009FA165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB64961F224925A0009FA165 /* MainInterface.storyboard in Resources */,
+				CB64962922492642009FA165 /* transport.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +610,15 @@
 			files = (
 				CB64960E22491668009FA165 /* Intents.intentdefinition in Sources */,
 				CB64960522491659009FA165 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB649612224925A0009FA165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB649627224925A9009FA165 /* Intents.intentdefinition in Sources */,
+				CB64961C224925A0009FA165 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +682,11 @@
 			target = CBF18ADF223D6AA1008D6B25 /* BusConductor */;
 			targetProxy = CB64960F2249167B009FA165 /* PBXContainerItemProxy */;
 		};
+		CB649622224925A0009FA165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB649615224925A0009FA165 /* MagicBusIntentsUI */;
+			targetProxy = CB649621224925A0009FA165 /* PBXContainerItemProxy */;
+		};
 		CBF18AC0223D2A6B008D6B25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBF18AA9223D2A69008D6B25 /* MagicBus */;
@@ -613,6 +715,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB64961D224925A0009FA165 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB64961E224925A0009FA165 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CBF18AB1223D2A69008D6B25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -635,6 +745,7 @@
 		CB64960A22491659009FA165 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicBusIntents/MagicBusIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = MagicBusIntents/Info.plist;
@@ -654,6 +765,7 @@
 		CB64960B22491659009FA165 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicBusIntents/MagicBusIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = MagicBusIntents/Info.plist;
@@ -663,6 +775,44 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.MagicBus.MagicBusIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB649625224925A0009FA165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = MagicBusIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.MagicBus.MagicBusIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB649626224925A0009FA165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = MagicBusIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonBelow.MagicBus.MagicBusIntentsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1015,6 +1165,15 @@
 			buildConfigurations = (
 				CB64960A22491659009FA165 /* Debug */,
 				CB64960B22491659009FA165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB649624224925A0009FA165 /* Build configuration list for PBXNativeTarget "MagicBusIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB649625224925A0009FA165 /* Debug */,
+				CB649626224925A0009FA165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,8 +13,13 @@ class IntentHandler: INExtension, BuyTicketIntentHandling {
     
     func confirm(intent: BuyTicketIntent, completion: @escaping (BuyTicketIntentResponse) -> Void) {
         
-        if intent.destination == "Düsseldorf" {
+        guard let destination = intent.destination else {
             completion(.init(code: .failure, userActivity: nil))
+            return
+        }
+        
+        if destination == "Düsseldorf" {
+            completion(.failureDestination(destination))
         } else {
             completion(.init(code: .success, userActivity: nil))
         }
@@ -26,5 +31,6 @@ class IntentHandler: INExtension, BuyTicketIntentHandling {
         
         let busConductor = Conductor()
         busConductor.purchaseTicket(ticket: ticket)
+        completion(.successPrice("€ 1,99"))
     }
 }
